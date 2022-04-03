@@ -4,6 +4,6 @@
 # Dá pra usar math
 
 import math
-num = float(input('Digite um número: '))
+num = float(input('\033[1;30;46m Digite um número: \033[m'))
 ptReal = math.trunc(num)
 print(ptReal)

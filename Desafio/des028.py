@@ -4,8 +4,8 @@
 import random
 nums = [0, 1, 2, 3, 4, 5]
 numPC = random.choice(nums)
-numUS = int(input('Escolha um número de 0 a 5 e tente acertar o que a máquina escolheu: '))
+numUS = int(input('\033[32m Escolha um número de 0 a 5 e tente acertar o que a máquina escolheu: '))
 if numPC == numUS:
-    print('Você acertou')
+    print('\033[34m Você acertou')
 else:
-    print('Você errou')
+    print('\033[35m Você errou')

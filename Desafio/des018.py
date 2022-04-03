@@ -2,9 +2,9 @@
 # Existem bibliotecas que tem esses valores de ângulo guardados
 
 import math
-ang = float(input('Informe o valor de um ângulo: '))
+ang = float(input('\033[31m Informe o valor de um ângulo: '))
 rad = math.radians(ang)
 cos = math.cos(rad)
 sin = math.sin(rad)
 tan = math.tan(rad)
-print('O ângulo {:.3f} possui cosseno {:.3f}, seno {:.3f} e tangente {:.3f}.'.format(ang, cos, sin, tan))
+print('\033[32m O ângulo {:.3f} possui cosseno {:.3f}, seno {:.3f} e tangente {:.3f}.'.format(ang, cos, sin, tan))

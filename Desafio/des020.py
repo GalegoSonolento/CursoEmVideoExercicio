@@ -2,10 +2,10 @@
 # que leia o nome dos quatro alunos e mostre a ordem sorteada
 
 import random
-n1 = str(input('Primeiro trab: '))
-n2 = str(input('Segundo trab: '))
-n3 = str(input('Terceiro Trab: '))
-n4 = str(input('Quarto trab: '))
+n1 = str(input('\033[31m Primeiro trab: '))
+n2 = str(input('\033[32m Segundo trab: '))
+n3 = str(input('\033[33m Terceiro Trab: '))
+n4 = str(input('\033[34m Quarto trab: '))
 trabs = [n1, n2, n3, n4]
 ordem = random.sample(trabs, k=len(trabs))
-print(ordem)
+print('\033[1;35m', ordem)

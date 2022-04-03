@@ -5,4 +5,4 @@ num2 = float(input('Digite outro: '))
 
 s = num1 + num2
 
-print('A soma de {} com {} é {}.'.format(num1, num2, s))
+print('\033[31m A soma de {} com {} é {}.'.format(num1, num2, s))
