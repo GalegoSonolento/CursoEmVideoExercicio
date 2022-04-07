@@ -5,11 +5,14 @@
 num = int(input('Digite um número para a máquina: '))
 print('Qual conversão deseja fazer? '
       '\n [1] converter para BINÁRIO'
-      '\n converter para OCTAL'
-      '\n converter para HEXADECIMAL')
-escolha =
-binary = format(int(input('Digite um valor inteiro: ')), 'b')
-print(binary)
-octal = "{0:o}".format(int(input('Digite outro valor inteiro: ')))
-print(octal)
-print(format(int(input("Digite um número float: ")), 'x'))
+      '\n [2] converter para OCTAL'
+      '\n [3] converter para HEXADECIMAL')
+escolha = int(input('Digite sua escolha aqui: '))
+if escolha == 1:
+      binary = format(num, 'b')
+      print(binary)
+elif escolha == 2:
+      octal = "{0:o}".format(num)
+      print(octal)
+elif escolha == 3:
+      print(format(num, 'x'))
