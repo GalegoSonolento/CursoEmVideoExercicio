@@ -15,3 +15,13 @@ print('Seu Índice de Massa Corporal será calculado de acordo com os seguintes 
 peso = float(input('Digite aqui seu peso: '))
 altura = float(input('Digite aqui sua altura em metros: '))
 imc = peso / (math.pow(altura, 2))
+if imc < 18.5:
+      print('Você está abaixo do peso ideal')
+elif 18.5 <= imc < 25:
+      print('Peso ideal')
+elif 25 <= imc < 30:
+      print('Você está com sobrepeso')
+elif 30 <= imc < 40:
+      print('Você está com obesidade')
+elif imc >= 40:
+      print('Você está com obesidade mórbida')
