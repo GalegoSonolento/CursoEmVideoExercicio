@@ -4,7 +4,11 @@ import time
 import emoji
 print('CONTAGEM REGRESSIVA PARA OS FOGOS!')
 for c in range(10, -1, -1):
-    sleep(1)
+    time.sleep(1)
     print(c)
-print()
+print('FOOOOOOOOOOOOOOOOOOOOOGOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO')
+time.sleep(0.5)
+print(emoji.emojize(':skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull:'
+                    ':skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull:'
+                    ':skull:'))
 
