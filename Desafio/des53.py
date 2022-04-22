@@ -4,3 +4,7 @@
 #o lobo ama o bolo
 # anotaram a data da maratona
 #Desconsiderar espaços e acentos
+termo = str(input('Digite uma tentativa de palíndromo: ')).lower().strip().split()
+
+for i in termo:
+
