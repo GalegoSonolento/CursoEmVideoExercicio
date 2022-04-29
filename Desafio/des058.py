@@ -1,0 +1,2 @@
+# Melhore op jogo do desafio 028 onde o computadopr vai pensar em um número entre 0 e 10 Só que agora o jogado r
+# vai tentar adivbinhar até acertar, mostrando no final quantos palpites foram necessários para vencer
