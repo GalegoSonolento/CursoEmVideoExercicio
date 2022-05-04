@@ -9,10 +9,11 @@ while cont <= termos:
     cont += 1
 maisTermos = True
 while maisTermos:
-    mais = int(input('Digite quantos mais termos você deseja visualizar: '))
+    mais = int(input('Digite quantos mais termos você deseja visualizar (digite zero para finalizar o programa): '))
     if mais <= 0:
         print('Não se mostra mais zero ou de trás para frente!')
         maisTermos = False
     else:
-        print('{}° termo: {}'.format(cont, a1 + (cont - 1) * r))
-        cont += 1
+        for i in range(0, mais):
+            print('{}° termo: {}'.format(cont, a1 + (cont - 1) * r))
+            cont += 1
