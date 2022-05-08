@@ -2,18 +2,19 @@
 # os valores e qual foi o maior e o menor valores lidos. O programa deve perguntar ao usuário se ele quer ou não
 # continuar a digitar valores.
 
-cont = 0
+cont = soma = 0
 num = -1
-soma = 0
+maior = 0
+menor = 0
 while num != 0:
     num = int(input('Digite um número inteiro pelo teclado [0 para parar]: '))
     if num > 0:
         soma += num
         cont += 1
-    if cont == 0:
+    if cont == 1:
         maior = num
         menor = num
-    else:
+    elif cont != 0:
         if num > maior:
             maior = num
         elif num < menor and num != 0:
