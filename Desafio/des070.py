@@ -31,6 +31,8 @@ while True:
         prodMaisMil += 1
     if j == 0:
         precoBarato = preco
+        maisBarato = prod
+        j += 1
     else:
         if precoBarato > preco:
             precoBarato = preco
@@ -49,4 +51,4 @@ while True:
 print(f'Você gastou {total} reais')
 print(f'{prodMaisMil} produtos custaram mais que mil reais')
 print(f'O produto mais barato é {maisBarato}')
-print('Volte sempre')
+print('Volte sempre!')
