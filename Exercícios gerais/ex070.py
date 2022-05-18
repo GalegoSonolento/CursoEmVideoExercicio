@@ -46,4 +46,24 @@
 # print(f'O produto mais barato é {maisBarato}')
 # print('Volte sempre!')
 
-
+soma = totMil = menor = cont = 0
+barato = ' '
+while True:
+    prod = str(input('Nome do produto: '))
+    preco = float(input('Preço: '))
+    cont += 1
+    soma += preco
+    if preco > 1000:
+        totMil += 1
+    if cont == 1 or preco < menor:
+        menor = preco
+        barato = prod
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Quer continuar? [S/N]')).strip().upper()[0]
+    if resp == 'N':
+        break
+print('{:-^40}'.format('FIM DO PROGRAMA'))
+print(f'O total da compra foi {soma:.2f}')
+print(f'{totMil} produtos foram mais de 1000 reais')
+print(f'O produto mais barato é {barato}')
