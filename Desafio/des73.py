@@ -21,3 +21,13 @@ print('Tabela em ordem alfabética')
 tabelado = sorted(brasileirao)
 for i in range(len(tabelado)):
     print(f'- {tabelado[i]}')
+print(' ')
+print('Posição da Chapecoense')
+temChape = False
+for i in range(len(brasileirao)):
+    if brasileirao == 'Chapecoense':
+        print(f'A Chapecoense está na {i+1}° posição')
+        temChape = True
+        break
+if not temChape:
+    print('A Chapecoense não está na série A')
