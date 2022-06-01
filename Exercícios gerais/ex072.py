@@ -26,7 +26,7 @@ while True:
         if opcao not in 'SN':
             print('Opção inválida.', end=' ')
         else:
-            break;
+            break
     if opcao == 'N':
         break
 print('Obrigado por utilizar o programa')
