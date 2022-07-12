@@ -14,5 +14,19 @@
 # print(f'Os números ímpares são: {impares}')
 
 num = []
+pares = list()
+impares = list()
 while True:
-
+    num.append(int(input("Digite um número: ")))
+    resp = str(input('Quer continuar? [S/N] '))
+    if resp in 'nN':
+        break
+for i in num:
+    if i % 2 == 0:
+        pares.append(i)
+    else:
+        impares.append(i)
+print('-=' * 30)
+print(f'A lista completa é: {num}')
+print(f'Os pares são {pares}')
+print(f'Os ímpares são {impares}')
