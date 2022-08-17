@@ -7,22 +7,23 @@ from time import sleep
 
 maior = 0
 maiorjog = 0
-jogs = dict()
-jogs['jogador 1'] = randint(1, 6)
-jogs['jogador 2'] = randint(1, 6)
-jogs['jogador 3'] = randint(1, 6)
-jogs['jogador 4'] = randint(1, 6)
+jogs = {'jogador 1': randint(1, 6), 'jogador 2': randint(1, 6), 'jogador 3': randint(1, 6),
+        'jogador 4': randint(1, 6)}
 for k, v in jogs.items():
     print(f'O {k} rodou {v} no dado.')
     sleep(1)
 print('-=' * 30)
 apoio = jogs.copy()
-for k, v in apoio.items():
-    if k == 'jogador 1':
-        maior = v
-        maiorjog = k
-    else:
-        if maior < apoio[k]:
+print(jogs)
+print(f'{"RANKING DOS JOGADORES":=^10}')
+for i in range(0, len(jogs)):
+    for k, v in apoio.items():
+        if k == 'jogador 1':
             maior = v
             maiorjog = k
-print(f'{"RANKING DOS JOGADORES":^10}')
+        else:
+            if maior < apoio[k]:
+                maior = v
+                maiorjog = k
+    print(f'{i+1}° lugar: {maiorjog} com {apoio[maiorjog]}')
+    del apoio[maiorjog]
