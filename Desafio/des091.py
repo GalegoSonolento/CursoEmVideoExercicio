@@ -5,8 +5,6 @@
 from random import randint
 from time import sleep
 
-maior = 0
-maiorjog = 0
 jogs = {'jogador 1': randint(1, 6), 'jogador 2': randint(1, 6), 'jogador 3': randint(1, 6),
         'jogador 4': randint(1, 6)}
 for k, v in jogs.items():
@@ -14,11 +12,12 @@ for k, v in jogs.items():
     sleep(1)
 print('-=' * 30)
 apoio = jogs.copy()
-print(jogs)
 print(f'{"RANKING DOS JOGADORES":=^10}')
 for i in range(0, len(jogs)):
+    maior = 0
+    maiorjog = 0
     for k, v in apoio.items():
-        if k == 'jogador 1':
+        if k == 'jogador1':
             maior = v
             maiorjog = k
         else:
