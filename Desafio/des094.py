@@ -29,8 +29,24 @@ while True:
     geral.append(pess.copy())
     pess.clear()
     resp = str(input('Quer continuar? [S/N] ')).strip()[0]
-    if resp not in 'NnSs':
-        print('ERRO! Responda apenas S ou N.')
-    elif resp in 'Nn':
+    while True:
+        if resp not in 'NnSs':
+            print('ERRO! Responda apenas S ou N.')
+            resp = str(input('Quer continuar? [S/N] ')).strip()[0]
+        else:
+            break
+    if resp in 'Nn':
         break
-print(geral)
+print('-=' * 30)
+print(f'A) Ao todo temos {len(geral)} pessoas cadastradas.')
+mediaIdade = 0
+for i, v in enumerate(geral):
+    mediaIdade += geral[i]['idade']
+mediaIdade = mediaIdade / len(geral)
+print(f'B) A média de idade é de {mediaIdade} anos.')
+print('As mulheres cadastradas foram ', end='')
+for i in range(0, len(geral)):
+    if geral[i]['sexo'] in 'Ff':
+        print(geral[i]['nome'], end='  ')
+print('')
+print('TEste')
