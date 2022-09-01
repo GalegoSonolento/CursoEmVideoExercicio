@@ -43,10 +43,15 @@ mediaIdade = 0
 for i, v in enumerate(geral):
     mediaIdade += geral[i]['idade']
 mediaIdade = mediaIdade / len(geral)
-print(f'B) A média de idade é de {mediaIdade} anos.')
-print('As mulheres cadastradas foram ', end='')
+print(f'B) A média de idade é de {mediaIdade:.2f} anos.')
+print('C) As mulheres cadastradas foram: ', end='')
 for i in range(0, len(geral)):
     if geral[i]['sexo'] in 'Ff':
-        print(geral[i]['nome'], end='  ')
-print('')
-print('TEste')
+        print(geral[i]['nome'], end='       ')
+print()
+print('D) Lista de pessoas que estão acima da média:')
+for i in range(0, len(geral)):
+    if geral[i]['idade'] > mediaIdade:
+        print(f'    nome = {geral[i]["nome"]}; sexo = {geral[i]["sexo"]}; idade = {geral[i]["idade"]}', end=' ')
+print()
+print('<<< ENCERRADO >>>')
