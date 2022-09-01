@@ -35,7 +35,7 @@
 #     #     print(v, end=' ')
 #     # print()
 #     tam = len(num)
-#     print(f'Recebi os valores {num} e são ao todo {tam} números')
+#     print(f'Recebi os valores {num} e são ao total {tam} números')
 #
 #
 # contador(2, 1, 4)
