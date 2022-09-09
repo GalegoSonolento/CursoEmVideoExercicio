@@ -25,6 +25,7 @@ def escreva(msg):
     print('~'*tam)
 
 
+# Programa
 escreva('Oi')
 escreva('Alemão')
 escreva('Amongus')
