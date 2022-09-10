@@ -7,22 +7,16 @@
 
 from time import sleep
 
-def contador(inicio, fim, passo):
-    pas = passo
-    print('-='*30)
-    print(f'Contagem de {inicio} até {fim} de {passo} em {passo}')
-    if fim < inicio:
-        pas = passo*(-1)
-    for i in range(inicio, fim+1, pas):
-        print(f'{i}', end=' ')
-        sleep(0.5)
-    print('FIM!')
-    print()
 
-def umem1():
+def contador(ini, f, pa):
+    pas = pa
     print('-='*30)
-    print('Contagem de 1 até 10 de 1 em 1')
-    for i in range(1, 11):
+    print(f'Contagem de {ini} até {f} de {pa} em {pa}')
+    if f < ini:
+        f -= 2
+        if pa > 0:
+            pas = pa * (-1)
+    for i in range(ini, f + 1, pas):
         print(f'{i}', end=' ')
         sleep(0.5)
     print('FIM!')
@@ -30,3 +24,9 @@ def umem1():
 
 contador(1, 10, 1)
 contador(10, 0, 2)
+print('-='*30)
+print('Agora é sua vez de personalizar a contagem!')
+inicio = int(input('Início: '))
+fim = int(input('Fim: '))
+passo = int(input('Passo: '))
+contador(inicio, fim, passo)
