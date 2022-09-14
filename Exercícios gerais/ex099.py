@@ -29,18 +29,18 @@
 # maior()
 
 
-def maior(* num):
-    cont = maior = 0
-    print('\n Analisando os valores passados...')
-    for v in num:
-        print(f'{v}', end=' ')
-
-
-# Programa principal
-maior(2, 9, 4, 5, 7, 1)
-maior(1, 2)
-maior()
-maior(6)
+# def maior(* num):
+#     cont = maior = 0
+#     print('\n Analisando os valores passados...')
+#     for v in num:
+#         print(f'{v}', end=' ')
+#
+#
+# # Programa principal
+# maior(2, 9, 4, 5, 7, 1)
+# maior(1, 2)
+# maior()
+# maior(6)
 
 
 
