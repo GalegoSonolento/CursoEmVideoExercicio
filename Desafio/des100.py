@@ -9,22 +9,23 @@ from random import randint
 def sorteia():
     print('Sorteando 5 valores da lista: ', end='')
     vetor = list()
-    for i in range(0, len(vetor)):
-        vetor[i] = randint
+    for i in range(0, 5):
+        vetor.append(randint)
         print(f'{vetor[i]} ')
     print('PRONTO!')
+    print()
     return vetor
 
 
 def somaPar(vetor):
-
-    somaPares = 0
-    if type(vetor) == list:
-        for i in range(0, len(vetor)):
-            if vetor[i] % 2 == 0:
-                somaPares += 1
-    return somaPares
+    print(vetor)
+    # somaPares = 0
+    # if type(vetor) == list:
+    #     for i in range(0, len(vetor)):
+    #         if vetor[i] % 2 == 0:
+    #             somaPares += 1
+    # print(f'Somando os valores pares de {vetor}, temos {somaPares}')
 
 
 # Código principal
-print(f'Sorteando 5 val')
+somaPar(sorteia())
