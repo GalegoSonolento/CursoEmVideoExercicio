@@ -3,15 +3,16 @@
 # A primeira função vai sortear 5 números e vai colocá-los dentro da lista
 # e a segunda função vai mostrar a soma entre todos os valores pares sorteados pela função anterior.
 
-from random import randint
+import random
 
 
 def sorteia():
     print('Sorteando 5 valores da lista: ', end='')
-    vetor = list()
+    vetor = []
     for i in range(0, 5):
-        vetor.append(randint)
-        print(f'{vetor[i]} ')
+        vetor.append(i)
+        vetor[i] = random.randint
+        print(f'{vetor[i]} ', end='')
     print('PRONTO!')
     print()
     return vetor
@@ -28,4 +29,7 @@ def somaPar(vetor):
 
 
 # Código principal
-somaPar(sorteia())
+# somaPar(sorteia())
+sus = random.random
+# soma = sus+1
+print(sus)
