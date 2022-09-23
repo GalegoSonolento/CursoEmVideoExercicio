@@ -28,40 +28,27 @@
 # # Código principal
 # somaPar(sorteia())
 #
+from random import randint
+from time import sleep
 
 
+def sorteia(lista):
+    print('Sorteando 5 valores da lista: ', end=' ')
+    for cont in range(0, 5):
+        lista.append(randint(1, 10))  # Sempre lembrar de colocar o range do randint
+        print(f'{lista[cont]}', end=' ')  # Esse método de amostragem por indexação é muito utilizado
+        sleep(0.3)
+    print('PRONTO')
 
 
+def somaPar(lista):  # Diferente de mim, ele trocou todos os pontos de memória do vetor
+    soma = 0
+    for valor in lista: # Iteração simples
+        if valor % 2 == 0:
+            soma += valor
+    print(f'Somando os valores pares de {lista}, temos {soma}')
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+num = list()
+sorteia(num)
+somaPar(num)
