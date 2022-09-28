@@ -81,7 +81,14 @@ def fatorial(num=0):
 n = int(input("Digite um número: "))
 print(f'O fatorial de {n} é {fatorial(n)}')  # Funções com return precisam ser expressas
 
+def par(n=0):
+  if n % 2 == 0:
+    return True
+  else:
+    return False
 
+num = int(input('digite um número: '))
+print('É par!') if par(num) else print('Não é par!')
 
 
 
