@@ -6,7 +6,6 @@ import datetime
 def voto(n):
     print('-' * 30)
     idade = datetime.date.today().year - n
-    print(idade)
     print(f'Com {idade} anos: ', end='')
     if 18 > idade > 15 or idade > 65:
         return 'VOTO OPCIONAL'
