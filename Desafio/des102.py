@@ -3,7 +3,8 @@
 # que será um valor lógico (opcional) indicando se será mostrado ou não na tela o processo de cálculo do fatorial.
 
 def fatorial(ent, show=False):
-   """
+  """
+  -> Calcula o fatorial de um número 
   fatorial(ent, show=False)
   param n: número a ser calculado
   param show: (opcional) Mostrar ou não o cálculo
