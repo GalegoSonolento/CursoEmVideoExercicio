@@ -22,3 +22,27 @@
 # # Programa principal
 # print(fatorial(5, True))
 # help(fatorial)
+
+
+def fatorial(n, show=False):
+  """
+  -> Calcula o fatorial de um número:
+  param n: número para cálculo
+  param show: mostra ou não o cálculo (opcional)
+  return: resultado do fatorial
+  """
+  f = 1
+  for i in range(n, 0, -1):
+    if show:  # Simplesmente uma iterção de prints
+      print(i, end=' ')
+      if i > 1:
+        print(' x', end=' ')
+      else:
+        print('= ', end='')
+    f *= i
+  return f
+
+
+# Programa principal
+print(fatorial(5, show=False))
+help(fatorial)
