@@ -3,6 +3,12 @@
 # que será um valor lógico (opcional) indicando se será mostrado ou não na tela o processo de cálculo do fatorial.
 
 def fatorial(ent, show=False):
+   """
+  fatorial(ent, show=False)
+  param n: número a ser calculado
+  param show: (opcional) Mostrar ou não o cálculo
+  return: O valor do fatorial de um número n
+  """
   print('-' * 30)
   respShow = ''
   num = ent
@@ -19,3 +25,4 @@ def fatorial(ent, show=False):
   
 # Programa principal
 print(fatorial(5, show=True))
+help(fatorial)
