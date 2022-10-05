@@ -3,11 +3,20 @@
 # O programa deverá ser capaz de mostrar a ficha do jogador,
 # mesmo que algum dado não tenha sido informado corretamente.
 
-def ficha(nome='<desconhecido>', gols='0'):
-    print(nome, gols)
+def ficha(nome, gols):
+    nomeJog = nome.replace(" ", "")
+    numGols = 0
+    nomePlayer = '<desconhecido>'
+    if gols.isnumeric():
+        numGols = gols
+    else:
+        numGols = 0
+    if nome.isalpha():
+        nomePlayer = nome
+    print(f'O jogador {nome}, fez {numGols} gol(s) no campeonato.')
 
 
 # Programa principal
-nome = str(input("Nome do jogador: "))
+nome = str(input("Nome do jogador: ")).strip()
 gols = str(input("Número de gols: "))
-ficha(nome if nome!='' else "Pedro", gols)
+ficha(nome, gols)
