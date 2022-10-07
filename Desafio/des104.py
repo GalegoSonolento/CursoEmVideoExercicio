@@ -4,9 +4,12 @@
 
 def leiaInt(txt):
     new_input = str(input(txt))
+    while not new_input.isnumeric():
+        print('\033[31m ERRO! Digite apenas um número!\033[37m')
+        new_input = str(input(txt))
     return new_input
 
 
 # Programa principal
-n = leiaInt(input())
+n = leiaInt("Dígite um numeral: ")
 print(f'Você acabou de digitar {n}')
