@@ -11,9 +11,9 @@ def ficha(nome, gols):
         numGols = gols
     else:
         numGols = 0
-    if nome.isalpha():
+    if nomeJog.isalpha():
         nomePlayer = nome
-    print(f'O jogador {nome}, fez {numGols} gol(s) no campeonato.')
+    print(f'O jogador {nomePlayer}, fez {numGols} gol(s) no campeonato.')
 
 
 # Programa principal

@@ -5,7 +5,7 @@
 def leiaInt(txt):
     new_input = str(input(txt))
     while not new_input.isnumeric():
-        print('\033[31m ERRO! Digite apenas um número!\033[37m')
+        print('\033[0;31m ERRO! Digite apenas um número!\033[38m')
         new_input = str(input(txt))
     return new_input
 
