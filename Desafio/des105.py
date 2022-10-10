@@ -19,15 +19,15 @@ def notas(*n, sit=False):
             maior_nota = j
         soma += j
     media = soma / len(n)
-    retorno = f'Total: {len(n)}, maior: {maior_nota}, menor: {menor_nota}, media: {media}'
+    dic = {'total: ': len(n), 'maior: ': maior_nota, 'menor: ': menor_nota, 'média: ': media}
     situacao = 'RUIM'
     if sit:
         if media >= 7:
             situacao = 'BOA'
         elif 5 <= media < 7:
             situacao = 'RAZOÁVEL'
-    retorno += f', situação: {situacao}'
-    return retorno
+        dic['situacao'] = situacao
+    return dic
 
 
 #Programa principal
