@@ -9,6 +9,13 @@
 
 
 def notas(*n, sit=False):
+    """
+    -> Função para calcular a maior, menor e nota média do aluno,
+    bem como sua situação.
+    :param n: uma ou mais notas que calculam a média do aluno
+    :param sit: parâmetro que ativa ou não a vizualização da situação do aluno
+    :return: dicionário com várias informações das notas do aluno
+    """
     menor_nota = maior_nota = soma = 0
     for i, j in enumerate(n):
         if i == 0:
@@ -31,5 +38,6 @@ def notas(*n, sit=False):
 
 
 #Programa principal
-resp = notas(2, 3, 10, sit=True)
+resp = notas(2, 9, 4, 10, 10, sit=True)
 print(resp)
+help(notas)
