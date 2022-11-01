@@ -39,11 +39,11 @@ def resumo(valor, t_aumento, t_diminuicao):
     :return: inexistente
     '''
     print('-'*30)
-    print('RESUMO DO VALOR')
+    print('\t RESUMO DO VALOR')
     print('-'*30)
-    print(f'Preço analisado: {moeda(valor):^13}')
-    print(f'Dobro do preço: {dobro(valor, True):^13}')
-    print(f'Metade do preço: {metade(valor, True):^13}')
-    print(f'{t_aumento}% de aumento: {aumentar(valor, t_aumento, True):^13}')
-    print(f'{t_diminuicao}% de redução: {diminuir(valor, t_diminuicao, True):^13}')
+    print(f'Preço analisado:\t{moeda(valor):^13}')
+    print(f'Dobro do preço: \t{dobro(valor, True):^13}')
+    print(f'Metade do preço: \t{metade(valor, True):^13}')
+    print(f'{t_aumento}% de aumento: \t{aumentar(valor, t_aumento, True):^13}')
+    print(f'{t_diminuicao}% de redução: \t{diminuir(valor, t_diminuicao, True):^13}')
     print('-'*30)
