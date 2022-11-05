@@ -1,10 +1,8 @@
 # Exercício Python 112: Dentro do pacote utilidadesCeV que criamos no desafio 111, temos um módulo chamado dado.
 # Crie uma função chamada leiaDinheiro() que seja capaz de funcionar como a função imputa(),
 # mas com uma validação de dados para aceitar apenas valores que seja monetários.
-
+from Desafio.des112.utilidadesCeV import moeda
 from utilidadesCeV import dado
 
-p = str(input('Digite o preço: R$'))
-print(dado.leiaDinheiro2(p))
-# r = dado.leiaDinheiro(p, 10, 20)
-# print(r)
+p = dado.leiaDinheiro('Digite o preço: R$')
+moeda.resumo(p, 32, 22)
