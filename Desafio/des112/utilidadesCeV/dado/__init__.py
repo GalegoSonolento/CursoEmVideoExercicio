@@ -7,3 +7,12 @@ def leiaDinheiro(num, t_aumento, t_diminuicao):
         return 'Valor não monetário'
     moeda.resumo(num, t_aumento, t_diminuicao)
     return ' '
+
+
+def leiaDinheiro2(num):
+    while not num.isnumeric():
+        print(3)
+        # Aqui vou mostrar a mensagem de erro e pedir o input novamente
+    if num.isnumeric():
+        return 'Deu certo'
+    return f'ERRO: "{num}" é um preço inválido'

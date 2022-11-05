@@ -4,6 +4,7 @@
 
 from utilidadesCeV import dado
 
-p = float(input('Digite o preço: R$'))
-r = dado.leiaDinheiro(p, 10, 20)
-print(r)
+p = str(input('Digite o preço: R$'))
+print(dado.leiaDinheiro2(p))
+# r = dado.leiaDinheiro(p, 10, 20)
+# print(r)
