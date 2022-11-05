@@ -9,10 +9,11 @@ def leiaDinheiro(num, t_aumento, t_diminuicao):
     return ' '
 
 
-def leiaDinheiro2(num):
-    while not num.isnumeric():
-        print(3)
-        # Aqui vou mostrar a mensagem de erro e pedir o input novamente
-    if num.isnumeric():
+def leiaDinheiro2(entrada):
+    while not entrada.isnumeric():
+        print(f'ERRO: "{entrada}" é um preço inválido')
+        entrada = entrada(input('Digite o preço: R$'))
+    num = float(entrada)
+    print(num)
+    if num == 2:
         return 'Deu certo'
-    return f'ERRO: "{num}" é um preço inválido'
