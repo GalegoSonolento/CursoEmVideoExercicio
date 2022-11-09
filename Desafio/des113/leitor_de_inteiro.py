@@ -12,8 +12,7 @@ def leiaInt(num):
         print('Trocado')
     except:
         print('ERRO: por favor, digite um número inteiro válido')
-        p = str(input('Digite um inteiro: '))
-        leiaInt(p)
+        return -1
     else:
         print('Sucesso')
         return num
