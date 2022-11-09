@@ -9,7 +9,11 @@
 def leiaInt(num):
     try:
         int(num)
+        print('Trocado')
     except:
         print('ERRO: por favor, digite um número inteiro válido')
+        p = str(input('Digite um inteiro: '))
+        leiaInt(p)
     else:
         print('Sucesso')
+        return num

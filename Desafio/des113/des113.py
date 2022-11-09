@@ -5,4 +5,5 @@
 import leitor_de_inteiro
 
 p = str(input('Digite um inteiro: '))
-leitor_de_inteiro.leiaInt(p)
+num = leitor_de_inteiro.leiaInt(p)
+print(f'O número é: {num}')
