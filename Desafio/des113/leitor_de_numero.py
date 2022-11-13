@@ -9,10 +9,16 @@
 def leiaInt(num):
     try:
         int(num)
-        print('Trocado')
     except:
         print('ERRO: por favor, digite um número inteiro válido')
         return -1
-    else:
-        print('Sucesso')
-        return num
+    return num
+
+
+def leiaReal(num):
+    try:
+        float(num)
+    except:
+        print('ERRO: por favor, digite um número real válido')
+        return -1
+    return num
