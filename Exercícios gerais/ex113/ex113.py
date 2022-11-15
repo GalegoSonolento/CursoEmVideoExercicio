@@ -1,17 +1,7 @@
-def leiaInt(msg):
-    while True:
-        try:
-            n = int(input(msg))
-        except (ValueError, TypeError):
-            print('\033[31mERRO: por favor, digite um número inteiro válido.\033[m')
-            continue
-        except (KeyboardInterrupt):
-            print('\n\033[31mEntrada de dados interrompida pelo usuário.\033[m')
-            return 0
-        else:
-            return n
+import leitor_de_numero
 
-
-num = leiaInt('Digite o valor: ')
-print(f'O valor digitado foi {num}')
+num = leitor_de_numero.leiaInt('Digite o valor inteiro: ')
+num2 = leitor_de_numero.leiaFloat('Digite o valor real: ')
+print(f'O valor digitado foi {num}'
+      f'\nO valor real digitado foi {num2}')
 
