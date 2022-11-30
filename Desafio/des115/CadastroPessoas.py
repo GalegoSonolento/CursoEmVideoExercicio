@@ -2,3 +2,6 @@
 # simples.
 # O sistema só vai ter duas opções: cadastrar uma nova pessoa e listar todas as pessoas cadastradas
 
+import UI, util
+
+util.roda_programa()
