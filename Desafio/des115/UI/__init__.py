@@ -57,4 +57,4 @@ def apontamento_de_opcoes():
 
 def printarDadosDict(dados_dict):
     for k in dados_dict:
-        print(f' - {k}: \t{dados_dict[k]}')
+        print(f'{k:<30} {dados_dict[k]:>3} anos')
