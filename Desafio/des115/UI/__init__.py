@@ -48,7 +48,13 @@ def apontamento_de_opcoes():
     opcao = testa_escolha()
     if opcao == 1:
         cabecalho_do_menu('Opção 1')
+        return 1
     elif opcao == 2:
         cabecalho_do_menu('Opcao 2')
     elif opcao == 3:
         return -1
+
+
+def printarDadosDict(dados_dict):
+    for k in dados_dict:
+        print(f' - {k}: \t{dados_dict[k]}')
