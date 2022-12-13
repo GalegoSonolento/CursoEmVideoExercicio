@@ -47,6 +47,16 @@ def jsonFiles(read_write=1, printar=True):
         else:
             if printar:
                 printarDadosDict(dados_dict)
+    else:
+        new_cadastro = display_novo_user()
+        try:
+            dados_dict = lerJson()
+        except:
+            dados_dict = {}
+            criarJson(dados_dict)
+        else:
+            insere_no_json(dados_dict, new_cadastro)
+
 
 def criarJson(dados_dict):
     json_object = json.dumps(dados_dict, indent=4)
@@ -61,3 +71,14 @@ def lerJson():
         dados_dict = json.load(file_in)
     file_in.close()
     return dados_dict
+
+
+def insere_no_json(json_, cadastro):
+    nome = cadastro['nome']
+    idade = cadastro['idade']
+    json_[nome] = idade
+    print(f'Novo registro de {nome} adicionado')
+    json_object = json.dumps(json_, indent=4)
+    with open("./resources/dados.json", "w") as outfile:
+        outfile.write(json_object)
+    outfile.close()

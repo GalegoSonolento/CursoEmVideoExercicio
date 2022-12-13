@@ -50,7 +50,7 @@ def apontamento_de_opcoes():
         cabecalho_do_menu('Opção 1')
         return 1
     elif opcao == 2:
-        cabecalho_do_menu('Opcao 2')
+        return 2
     elif opcao == 3:
         return -1
 
@@ -58,3 +58,12 @@ def apontamento_de_opcoes():
 def printarDadosDict(dados_dict):
     for k in dados_dict:
         print(f'{k:<30} {dados_dict[k]:>3} anos')
+
+
+def display_novo_user():
+    new_user = dict()
+    new_user['nome'] = str(input('Nome: '))
+    # try:
+    #     new_user['idade'] = int(input('Idade: '))
+    # except typeException:
+    return new_user
