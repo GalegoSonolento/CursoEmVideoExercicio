@@ -63,7 +63,11 @@ def printarDadosDict(dados_dict):
 def display_novo_user():
     new_user = dict()
     new_user['nome'] = str(input('Nome: '))
-    # try:
-    #     new_user['idade'] = int(input('Idade: '))
-    # except typeException:
+    while True:
+        idade = str(input('Idade: '))
+        if idade.isnumeric():
+            new_user['idade'] = int(idade)
+            break
+        print('Idade deve ser um número inteiro')
+
     return new_user
